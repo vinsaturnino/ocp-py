@@ -11,7 +11,7 @@ RUN yum -y install python3-pip wget
 
 RUN python3 -m pip install --upgrade pip \
   && python3 -m pip install --upgrade pipenv \
-  && pipenv install --system --deploy
+  && pipenv install
 
 USER 1001
 
